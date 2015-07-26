@@ -21,6 +21,7 @@ lasttag=$(git describe --tags `git rev-list --tags --max-count=1`)
 echo "Last tag: " $lasttag
 #Get mainversion:
 IFS=. read major minor build <<<"${lasttag##*v}"
+build=2
 echo "Old Version: "$major"."$minor"."$build
 if [[ -z "$build" ]]; then
 	build=0
