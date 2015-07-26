@@ -38,7 +38,7 @@ public class BiomeRegistrant {
 	public static void addBiomeByName(String name) {
 		BiomeGenBase biomeForId = null;
 		for (BiomeGenBase biome : biomeSet) {
-			if (biome.biomeName.equals(name))
+			if (name.equals(biome.biomeName))
 				biomeForId = biome;
 		}
 
