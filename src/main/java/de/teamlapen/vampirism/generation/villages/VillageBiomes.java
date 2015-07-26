@@ -18,8 +18,8 @@ import de.teamlapen.vampirism.util.Logger;
 public class VillageBiomes {
 
 	public static void postInit(FMLPostInitializationEvent ev) {
-		if(Configs.disable_vampire_biome)return;
-		
+		if(Configs.disable_village_biome)return;
+		Logger.d("VillageBiomes","Processing village biomes");
 		// All other mods should be done registering by now.
 		BiomeRegistrant.init();
 
@@ -50,7 +50,7 @@ public class VillageBiomes {
 	}
 
 	public static void preInit(FMLPreInitializationEvent event) {
-		if(Configs.disable_vampire_biome)return;
+		if(Configs.disable_village_biome)return;
 		// Load Config
 		File ConfigFile = new File(event.getModConfigurationDirectory(), "vampirism_village_biomes.cfg");
 		ConfigHandler.loadConfig(ConfigFile);
