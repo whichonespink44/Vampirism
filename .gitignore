@@ -27,3 +27,5 @@ usercache.json
 whitelist.json
 world/
 hs*
+
+src/main/resources/assets/vampirism/sounds/ambient/blood_dripping.ogg
